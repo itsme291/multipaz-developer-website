@@ -1,75 +1,93 @@
 .main {
-  max-width: 960px;
+  max-width: 860px;
   margin: 0 auto;
   padding: 2rem 1.5rem 4rem;
 }
 
-.hero {
-  text-align: center;
-  padding: 3rem 0 2rem;
+.main h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
-.hero h1 {
-  font-size: 2.5rem;
-}
-
-.hero p {
-  font-size: 1.1rem;
+.intro {
   color: var(--ifm-color-emphasis-700);
-  max-width: 600px;
-  margin: 0 auto;
+  font-size: 1rem;
+  max-width: 660px;
+  margin-bottom: 2rem;
 }
 
-.section {
-  margin: 2rem 0;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+.partnerList {
+  display: flex;
+  flex-direction: column;
   gap: 1.5rem;
-  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .card {
   border: 1px solid var(--ifm-color-emphasis-300);
   border-radius: 8px;
-  padding: 1.5rem;
+  padding: 1.5rem 2rem;
 }
 
-.card h3 {
-  margin: 0.5rem 0;
-}
-
-.card a {
-  font-weight: 600;
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .logo {
-  height: 48px;
+  height: 44px;
+  width: auto;
   object-fit: contain;
 }
 
-.cta {
-  margin-top: 4rem;
-  padding: 2.5rem;
-  background: var(--ifm-color-emphasis-100);
-  border-radius: 12px;
-  text-align: center;
+.cardTitle {
+  margin: 0;
+  font-size: 1.15rem;
 }
 
-.ctaButton {
+.hostedBy {
+  margin: 0.2rem 0 0;
+  font-size: 0.875rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.cardDescription {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.visitButton {
   display: inline-block;
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
+  padding: 0.45rem 1.1rem;
   background: var(--ifm-color-primary);
   color: white;
   border-radius: 6px;
+  font-size: 0.875rem;
   font-weight: 600;
   text-decoration: none;
 }
 
-.ctaButton:hover {
-  opacity: 0.9;
+.visitButton:hover {
+  opacity: 0.88;
   color: white;
+  text-decoration: none;
+}
+
+.cta {
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  padding-top: 1.5rem;
+}
+
+.cta strong {
+  font-size: 1rem;
+}
+
+.cta p {
+  margin: 0.4rem 0 0;
+  font-size: 0.95rem;
+  color: var(--ifm-color-emphasis-700);
 }
