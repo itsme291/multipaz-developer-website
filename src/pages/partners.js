@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '@theme/Layout';
+import Link from '@docusaurus/Link';
 import styles from './partners.module.css';
 
 function PartnerCard({ name, hostedBy, hostedByUrl, description, url, logoUrl }) {
@@ -33,6 +34,15 @@ export default function Partners() {
       title="Partners"
       description="Organizations collaborating with Multipaz on open digital credentials">
       <main className={styles.main}>
+        <nav className={styles.breadcrumb} aria-label="breadcrumbs">
+          <Link href="/">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-label="Home">
+              <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+            </svg>
+          </Link>
+          <span className={styles.breadcrumbSep}>›</span>
+          <span>Partners</span>
+        </nav>
         <h1>Partners</h1>
         <p className={styles.intro}>
           Multipaz collaborates with leading open source organizations to build a robust,
