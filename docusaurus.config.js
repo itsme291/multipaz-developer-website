@@ -173,7 +173,11 @@ const config = {
             to: '/blog',
             position: 'left',
           },
-          
+          {
+            label: 'Partners',
+            to: '/partners',
+            position: 'left',
+          },
           {
             type: 'html',
             position: 'right',
